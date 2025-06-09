@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import fonts here -->
+
+    <title>Author Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  
+  <body>
+      <!-- menu header -->
+    <div id="header-placeholder"></div>
+    <!-- load header -->
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+        });
+    </script>
+
+    <div class="container">
+     <header>
+  <img 
+    src="https://cdn.glitch.global/df90b842-88ff-465e-b94e-5ed62114154e/my-headshot%20copy.jpg?v=1749462940463" 
+    alt="my-headshot copy" 
+  />
+  <h1>Maya Lilly Dempster</h1>
+  <p>Writer | Artist</p>
+</header>
+
+      <section class="bio">
+        <!-- edit author bio below -->
+        <p>
+          Maya Dempster is a Melbourne based writer, specialising in autofiction, fiction, and poetry, currently completing a Bachelor of Arts in Creative Writing at RMIT. Maya bases much of her work around the queer experience, often drawing on personal experiences to inspire fiction. Her work is featured in a digital publication of <em>Refractions</em> at the Bowen Street Press.
+        </p>
+        <p>
+          Her current work, based in the digital space, <em>Incandescent</em> follows the inner dialogue of the narrator on their journey of belonging and transformation. Through its poignant language, the poem explores impermanence, longing and the desire for true care. The piece symbolises both isolation and hope, a space where the narrator yearns to become something beautiful, even if fleeting. This work invites reflection on the fragility of existence and the quiet, aching search for meaning and connection. 
+        </p>
+      </section>
+
+           <section class="publications">
+        <h2>Publication History</h2>
+        <!-- edit author publications below, creating new list items -->
+        <ul>
+          <li><a href="#">The Victory of Faith (2024)</a></li>
+        </ul>
+      </section>
+
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mayadempster@outlook.com">mayadempster@outlook.com</a>
+        </p>
+      </section>
+
+    </div>
+  </body>
+</html>

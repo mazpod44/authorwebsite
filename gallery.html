@@ -1,0 +1,31 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artist Feature Gallery</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- menu header -->
+<div id="header-placeholder"></div>
+<!-- load header -->
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("header-placeholder").innerHTML = html;
+    });
+</script>
+<div class="gallery">
+  
+
+  <div class="feature-box" id="featureBox">
+    <img id="featureImg" src="https://cdn.glitch.global/df90b842-88ff-465e-b94e-5ed62114154e/my-headshot%20copy.jpg?v=1749462940463" alt="Featured Art">
+    <h2 id="featureTitle">Featured Artist: Maya Dempster</h2>
+    <p id="featureDesc">This spotlight showcases Incandescent, which follows the inner dialogue of the narrator on their journey of belonging and transformation. Through poignant language, the poem explores impermanence, longing and the desire for true care. The piece symbolises both isolation and hope, a space where the narrator yearns to become something beautiful, even if fleeting. This work invites reflection on the fragility of existence and the quiet, aching search for meaning and connection. </p>
+    <p id="featureMeta"><small>Year: 2025</small></p>
+      </div> <!-- close gallery div -->
+</div> <!-- close gallery div -->
+</body>
+</html>
